@@ -18,6 +18,7 @@ import { useSetCurrentUser } from "../../contexts/CurrentUserContext";
 
 function SignInForm() {
   const setCurrentUser = useSetCurrentUser();
+  useRedirect("loggedIn");
 
   const [signInData, setSignInData] = useState({
     username: "",
